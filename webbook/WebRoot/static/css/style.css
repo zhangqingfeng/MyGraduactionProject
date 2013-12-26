@@ -1,0 +1,524 @@
+/*************************************
+   WELCOME TO THE CUSTOM STYLESHEET
+--------------------------------------
+              style.css
+***************************************/
+
+/**************************************/
+/*           COLOR SCHEME             */
+/**************************************
+- black		#000
+- white		#fff
+- background          #f3f1ec
+-           #
+-           #
+***************************************/
+
+
+/**************************************/
+/*              GLOBALS               */
+/**************************************/
+body{
+	margin:0px;
+	padding:0px;
+	background:#000;
+}
+
+/**************************************/
+/*              HEADER                */
+/**************************************/
+#header{
+	height:80px;
+	border-bottom:3px solid #3f4c6b;
+	background:#356aa0;
+	box-shadow: 0 0 3px #666666;
+	padding: 0 30px;
+    position: relative;
+}
+#header .centerwapper{
+	max-width:1200px;
+	min-width:800px;
+	margin:0px auto;
+	padding-top:5px;
+	position:relative;
+}
+#header .userinfo{
+	position:absolute;
+	top:5px;
+	right:0px;
+}
+#header .userinfo a{
+	font-size:12px;
+	color:#fff;
+	margin-left:5px;
+	text-decoration:none;
+}
+#header .userinfo a:hover{
+	text-decoration:underline;
+}
+
+/**************************************/
+/*             NAVIGATION             */
+/**************************************/
+#nav{
+	margin-left:-250px;
+	width:250px;
+	float:left;
+}
+#nav ul{
+	margin:0px;
+}
+#nav ul li{
+	margin:0px;
+	list-style-type:none;
+	height:30px;
+	line-height:30px;
+	background-image:url(../images/global_nav_sprite.png);
+	background-repeat:no-repeat;
+}
+#nav ul li.activity{
+	background-position:5px -65px;
+}
+#nav ul li.activity-select{
+	background-position:5px -100px;
+	background-color:#e5e3de;
+	font-weight:bold;
+}
+#nav ul li.contacts{
+	background-position:5px -135px;
+}
+#nav ul li.contacts-select{
+	background-position:5px -170px;
+	background-color:#e5e3de;
+	font-weight:bold;
+}
+#nav ul li.task{
+	background-position:5px -207px;
+}
+#nav ul li.task-select{
+	background-position:5px -242px;
+	background-color:#e5e3de;
+	font-weight:bold;
+}
+#nav ul li.deals{
+	background-position:5px -352px;
+}
+#nav ul li.deals-select{
+	background-position:5px -389px;
+	background-color:#e5e3de;
+	font-weight:bold;
+}
+#nav ul li.search{
+	background-position:5px -423px;
+}
+#nav ul li.search-select{
+	background-position:5px -460px;
+	background-color:#e5e3de;
+	font-weight:bold;
+}
+#nav ul li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	color:#555;
+	text-decoration:none;
+	padding-left:40px;
+	font-size:14px;
+}
+#nav ul li a span{
+	font-size:11px;
+	margin-left:10px;
+}
+#nav ul li a:hover{
+	color:#333;
+}
+
+#nav hr{
+	-moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DAD8D4 -moz-use-text-color #FFFFFF;
+    border-left: medium none;
+    border-right: medium none;
+    border-style: solid none;
+    border-width: 1px medium;
+    margin: 1em 0 1em 0;
+}
+#nav h4{
+	color: #999999;
+    font-size: 14px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+#nav .lastaction{
+	
+}
+#nav .lastaction .action{
+	position:relative;
+	height:30px;
+	border-bottom:1px solid #EBE8E4;
+	padding-bottom:8px;
+	padding-top:8px;
+}
+#nav .lastaction .action a{
+	padding:0px;
+	margin:0px;
+	text-decoration:none;
+	color:#444;
+}
+#nav .lastaction .action a:hover{
+	color:#888;
+}
+#nav .lastaction .action .contacts,#nav .lastaction .action .deals{
+	background-image:url(../images/highrise_sprites.png);
+	background-repeat:no-repeat;
+	width:30px;
+	height:30px;
+	display:block;
+	background-position:-112px -148px;
+	border: 1px solid #DDDDDD;
+	float:left;
+}
+#nav .lastaction .action .deals{
+	background-position:-222px -162px;
+}
+#nav .lastaction .action .title{
+	font-size:14px;
+	width:200px;
+	height:19px;
+	overflow:hidden;
+	margin-left:35px;
+	display:block;
+}
+#nav .lastaction .action .msg{
+	font-size:12px;
+	width:200px;
+	height:19px;
+	overflow:hidden;
+	margin-left:35px;
+	display:block;
+}
+
+/**************************************/
+/*            MAIN CONTENT            */
+/**************************************/
+#login{
+	width:400px;
+	border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 3px #CCCCCC;
+	margin:50px auto;
+	padding:15px;
+	background-color:#FFF;
+}
+#login h3{
+	margin-top :0px;
+}
+#login label{
+	display:block;
+	padding:10px 0px;
+	font-size:14px;
+}
+#login input[type='text'],#login input[type='password']{
+	width:370px;
+}
+#login .buttondiv{
+	margin-top:15px;
+}
+.main{
+	max-width:1200px;
+	min-width:800px;
+	margin:20px auto;
+	padding:0px 30px;
+}
+.main #innerwapper{
+	padding-left:250px;
+}
+.main #pager{
+	float:left;
+	width:100%;
+    position: relative;
+}
+.main #pager .pagebody,.main #pager .pageall{
+	margin-right:210px;
+	background-color: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 3px #CCCCCC;
+	min-height: 500px;
+}
+/*no pageside user this style*/
+.main #pager .pageall{
+	margin-right:0px;
+}
+.main #pager .pagerhader{
+	padding:15px 30px;
+	background-color:#F0F5F8;
+	border-bottom: 1px solid #DADEE5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	font-size:16px;
+	position:relative;
+}
+.main #pager .moneyPic{
+	background-image:url('../images/highrise_sprites.png');
+	background-repeat:no-repeat;
+	background-position:-224px -56px;
+	width:55px;
+	height:55px;
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+.main #pager .pagerhader span{
+	font-size:12px;
+	margin-left:10px;
+}
+.main #pager .pagerhader .state a{
+	font-size:12px;
+	margin-top:10px;
+	margin-left:0px;
+	padding:5px 10px;
+	display:inline-block;
+	text-decoration:none;
+	background-color:#fff;
+	border:1px solid #EBE8E4;
+}
+.main #pager .pagecontent{
+	padding:10px 30px;
+}
+.main #pager  table{
+	width:100%;
+	border:0px;
+}
+.main #pager  td{
+	border-collapse: collapse;
+    border-spacing: 0;
+	border:0px;
+	border-bottom: 1px solid #EFEFEF;
+	font-size:12px;
+	line-height:1.5;
+	color:#666;
+	padding-left:0px;
+}
+.main #pager  td h3{
+	margin:0px;
+	padding:0px;
+	height:20px;
+	font-size:16px;
+	line-height:16px;
+}
+.main #pager .pagecontent span{
+	color:#fff;
+	display:block;
+	padding:5px;
+	font-size:12px;
+	text-align:center;
+}
+.main #pager .pagecontent .type{
+	width:100px;
+}
+.main #pager .pagecontent .time{
+	width:50px;
+}
+.main #pager .pagecontent .event{  
+	background: none repeat scroll 0 0 #334E7D;
+}
+.main #pager .pagecontent .win{
+	background: none repeat scroll 0 0 #339933;
+}
+.main #pager .pagecontent .change{
+	background: none repeat scroll 0 0 #333333;
+}
+.main #pager .pagecontent .task{
+	background: none repeat scroll 0 0 #C87800;
+}
+.main #pager .pagecontent .lost{
+	background: none repeat scroll 0 0 #CC0000;
+}
+
+.main #pager .pagecontent .today{
+	background-color: #FFCC00;
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 2px;
+    padding: 2px 4px;
+    text-transform: uppercase;
+}
+/*add cotacts*/
+.main #pager .pagecontent .reqiredtable,.main #pager .pagecontent .othertable{
+	padding:0px 30px;
+	background-color:#F0F5F8;
+}
+.main #pager .pagecontent .othertable{
+	background-color:#FFF;
+}
+.main #pager .pagecontent .name_column{
+	width:80px;
+	font-size:16px;
+	font-weight:bold;
+}
+.main #pager .pagecontent .otherformelement{
+	margin-top:20px;
+	padding:0px 30px;
+}
+.main #pager .pagecontent .element_one{
+	font-size:14px;
+	color:#666;
+	position:relative;
+}
+.main #pager .pagecontent .element_one .more{
+	right:0px;
+	position:absolute;
+}
+.main #pager .pagecontent .element_one span{
+	text-align:left;
+	color:#666;
+	padding-left:0px;
+}
+.main #pager .pagecontent .element_one strong{
+	font-size:14px;
+	color:#666;
+	display:block;
+	margin-bottom:5px;
+}
+.main #pager .pagecontent .element_one textarea{
+	width:100%;
+	height:100px;
+	padding:0px;
+}
+
+.main #pager .pagecontent .manpic{
+	background-image: url("../images/user.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+	padding:0px;
+}
+.main #pager .pagecontent .company{
+	background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+	padding:0px;
+}
+
+
+.main #pager .pagecontent .oldtime{
+	color:#888;
+}
+.main #pager .pageside{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:200px;
+	font-size:12px;
+}
+.main #pager .pageside .button{
+	margin-bottom:10px;
+}
+.main #pager .pageside .button a{
+	background: url("../images/add_button_left.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    font-family: 'Lucida Grande','Lucida Sans','Lucida Sans Unicode','Verdana',sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    margin-right: 0.4em;
+    padding: 0 0 0 24px;
+    text-decoration: none;
+    text-shadow: 0 0 1px #FFFFFF;
+}
+.main #pager .pageside .button a span{
+	background: url("../images/add_button_right.gif") no-repeat scroll 100% 0 transparent;
+    color: #000000;
+    display: block;
+    line-height: 23px;
+    padding: 0 12px 1px 0;
+}
+.main #pager .pageside .box{
+	background-color:#FFF;
+	box-shadow: 0 0 3px #CCCCCC;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.main #pager .pageside .box h3{
+	font-size:14px;
+	margin:0px;
+	padding:8px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:5px;
+	background-color:#D3DBFF;
+	position:relative;
+}
+.main #pager .pageside .box h3 a{
+	font-size:14px;
+	position:absolute;
+	right:8px;
+	text-decoration:none;
+	bottom:6px;
+	
+}
+.main #pager .pageside .box p{
+	padding-left:8px;
+	padding-right:8px;
+	line-height:1.5;
+	color:#666;
+	margin-bottom:10px;
+}
+.main #pager .pageside .box .link_person,.main #pager .pageside .box .link_company{
+	display:block;
+	padding-left:26px;
+	background-image:url(../images/user.png);
+	background-repeat:no-repeat;
+	background-position:6px center;
+	height:20px;
+	line-height:20px;
+	text-decoration:none;
+}
+.main #pager .pageside .box .link_company{
+	background-image:url(../images/home.png);
+}
+.main #pager .pageside .links a{
+	display:block;
+	margin-bottom:5px;
+}
+.main #pager .pageside .box .type{
+	background: none repeat scroll 0 0 #334E7D;
+	color:#fff;
+	padding:2px;
+}
+.main #pager .pageside .box .timeline{
+	margin-top:20px;
+	margin-bottom:5px;
+	padding:8px;
+	border-bottom:1px solid #ccc;
+	display:block;
+}
+.main #pager .pageside .box .task{
+	padding-left:8px;
+	padding-right:8px;
+	margin-bottom:5px;
+}
+.main #pager .pageside .box .content{
+	line-height:1.5;
+}
+/**************************************/
+/*               FOOTER               */
+/**************************************/
+#fotter{
+	text-align:right;
+	max-width:1200px;
+	min-width:800px;
+	margin:20px auto;
+}
+#fotter a{
+	text-decoration:none;
+	font-size:12px;
+}
